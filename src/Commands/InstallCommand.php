@@ -5,7 +5,7 @@ namespace Akukoder\FortifySoftUi\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 
-class FortifySoftUiCommand extends Command
+class InstallCommand extends Command
 {
     public $signature = 'fortify:softui';
 

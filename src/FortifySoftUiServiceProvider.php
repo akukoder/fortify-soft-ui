@@ -2,7 +2,7 @@
 
 namespace Akukoder\FortifySoftUi;
 
-use Akukoder\FortifySoftUi\Commands\FortifySoftUiCommand;
+use Akukoder\FortifySoftUi\Commands\InstallCommand;
 use Illuminate\Support\ServiceProvider;
 
 class FortifySoftUiServiceProvider extends ServiceProvider
@@ -31,11 +31,11 @@ class FortifySoftUiServiceProvider extends ServiceProvider
 
             // Update public files
             $this->publishes([
-                __DIR__ . '/../stubs/public' => base_path('public'),
+                __DIR__ . '/../stubs/public/soft-ui' => base_path('public/vendor/soft-ui'),
             ], 'fortify-soft-ui-public');
 
             $this->commands([
-                FortifySoftUiCommand::class,
+                InstallCommand::class,
             ]);
         }
     }
