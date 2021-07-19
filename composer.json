@@ -31,11 +31,6 @@
       "Akukoder\\FortifySoftUi\\": "src"
     }
   },
-  "autoload-dev": {
-    "psr-4": {
-      "Zacksmash\\FortifySoftUi\\Tests\\": "tests"
-    }
-  },
   "scripts": {
     "psalm": "vendor/bin/psalm",
     "test": "vendor/bin/phpunit --colors=always",
