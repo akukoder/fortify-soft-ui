@@ -1,16 +1,9 @@
-[![Latest Stable Version](https://img.shields.io/github/v/release/proxeuse/fortify-tabler?style=flat-square)](https://packagist.org/packages/proxeuse/fortify-tabler) [![Total Downloads](https://img.shields.io/packagist/dt/proxeuse/fortify-tabler?style=flat-square)](https://packagist.org/packages/proxeuse/fortify-tabler) [![PHP Version Support](https://img.shields.io/packagist/php-v/proxeuse/fortify-tabler?style=flat-square)](https://packagist.org/packages/proxeuse/fortify-tabler)
-[![License](https://img.shields.io/github/license/Proxeuse/fortify-tabler?style=flat-square)](https://github.com/Proxeuse/fortify-tabler/blob/master/LICENSE.md)
-
-<p align="center">
-<img width="400" src="https://github.com/akukoder/fortify-soft-ui/raw/master/fortify-soft-ui.png">
-</p>
-
+![FortifySoftUi](https://bitbucket.org/akukoder/fortify-soft-ui/src/master/fortify-soft-ui.png)
 
 # Introduction
 
 **FortifySoftUi** is a Laravel Fortify UI preset, built with [Soft UI Dashboard](https://www.creative-tim.com/product/soft-ui-dashboard) and [Soft UI Design System](https://www.creative-tim.com/product/soft-ui-design-system) by [Creative Tim](https://www.creative-tim.com).
 
-<a name="installation"></a>
 ## Installation
 
 To get started, you'll need to install **FortifySoftUi** using composer.
@@ -25,16 +18,8 @@ Next, you'll need to run the install command:
 php artisan fortify:softui
 ```
 
-This command will publish **FortifySoftUi's** views and resources to your project.
+![FortifySoftUi Screenshot](https://bitbucket.org/akukoder/fortify-soft-ui/src/master/fortify-soft-ui-login.png)
 
-- All `auth` views
-- a `webpack.mix.js` file, tuned for UIkit
-- a `package.json` file, for required NPM modules
-- a slightly opinionated `.editorconfig` file
-- a `.gitignore` file
-- a new route for `user/profile`
-
-<p align="center"><img  src="https://github.com/akukoder/fortify-soft-ui/raw/master/fortify-soft-ui-login.png"></p>
 
 ## License
 
