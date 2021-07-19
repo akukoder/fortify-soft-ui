@@ -20,7 +20,10 @@ php artisan fortify:softui
 
 ![FortifySoftUi Screenshot](https://bitbucket.org/akukoder/fortify-soft-ui/raw/d4aeed12cfdf772bb1a1a069559e1740a6903927/fortify-soft-ui-login.png)
 
+## Credits
+- [FortifyUI](https://github.com/zacksmash/fortify-ui)
+- 
 
 ## License
 
-**FortifyUIkit** is open-sourced software licensed under the [MIT license](LICENSE.md).
+**FortifySoftUi** is open-sourced software licensed under the [MIT license](LICENSE.md).
