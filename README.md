@@ -1,4 +1,4 @@
-![FortifySoftUi](https://bitbucket.org/akukoder/fortify-soft-ui/src/master/fortify-soft-ui.png)
+![FortifySoftUi](https://bitbucket.org/akukoder/fortify-soft-ui/raw/d4aeed12cfdf772bb1a1a069559e1740a6903927/fortify-soft-ui.png)
 
 # Introduction
 
@@ -18,7 +18,7 @@ Next, you'll need to run the install command:
 php artisan fortify:softui
 ```
 
-![FortifySoftUi Screenshot](https://bitbucket.org/akukoder/fortify-soft-ui/src/master/fortify-soft-ui-login.png)
+![FortifySoftUi Screenshot](https://bitbucket.org/akukoder/fortify-soft-ui/raw/d4aeed12cfdf772bb1a1a069559e1740a6903927/fortify-soft-ui-login.png)
 
 
 ## License
