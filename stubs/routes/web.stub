@@ -1,0 +1,21 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::group(['middleware' => ['auth', 'verified']], function () {
+
+    Route::view('dashboard', 'dashboard')
+        ->name('dashboard');
+
+    Route::view('/profile', 'profile.show')
+        ->name('profile');
+
+    Route::post('/profile', function () {
+
+    })->name('profile.update');
+
+});

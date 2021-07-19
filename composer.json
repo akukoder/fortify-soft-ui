@@ -17,7 +17,7 @@
     }
   ],
   "require": {
-    "illuminate/contracts": "^8.0",
+    "illuminate/support": "^8.0",
     "zacksmash/fortify-ui": "^1.0"
   },
   "require-dev": {

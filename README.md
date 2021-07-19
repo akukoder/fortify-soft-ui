@@ -8,10 +8,7 @@
 
 # Introduction
 
-**FortifySoftUi** is a Laravel Fortify UI preset, built with [Soft UI Dashboard](https://www.creative-tim.com/product/soft-ui-dashboard) by [Creative Time](https://www.creative-tim.com).
-
-- [Requirements](#requirements)
-- [Installation](#installation)
+**FortifySoftUi** is a Laravel Fortify UI preset, built with [Soft UI Dashboard](https://www.creative-tim.com/product/soft-ui-dashboard) and [Soft UI Design System](https://www.creative-tim.com/product/soft-ui-design-system) by [Creative Tim](https://www.creative-tim.com).
 
 <a name="installation"></a>
 ## Installation
@@ -37,7 +34,7 @@ This command will publish **FortifySoftUi's** views and resources to your projec
 - a `.gitignore` file
 - a new route for `user/profile`
 
-<p align="center"><img  src="https://github.com/zacksmash/fortify-uikit/raw/master/fortify-uikit-screenshot.png"></p>
+<p align="center"><img  src="https://github.com/akukoder/fortify-soft-ui/raw/master/fortify-soft-ui-login.png"></p>
 
 ## License
 
