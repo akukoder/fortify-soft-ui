@@ -24,6 +24,14 @@ Next, you'll need to run the install command:
 php artisan fortify:softui
 ```
 
+## Demo
+
+Visit the demo site [here](https://demo-fortify-soft-ui.akukoder.com/).
+
+- Email: ```demo@example.org```
+- Password: ```password```
+
+
 ## Documentation
 
 For the design documentation, please refer to the official websites.
