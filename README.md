@@ -22,7 +22,7 @@ php artisan fortify:softui
 
 ## Credits
 - [FortifyUI](https://github.com/zacksmash/fortify-ui)
-- 
+- [Creative Tim](https://www.creative-tim.com)
 
 ## License
 
