@@ -4,6 +4,12 @@
     </div>
 
     <div class="card-body px-5">
+        @if (session('status') == 'two-factor-authentication-enabled')
+            <div class="alert alert-success mb-5">
+                {{ __('Two-factor authentication has been enabled.') }}
+            </div>
+        @endif
+
         @if(! auth()->user()->two_factor_secret)
             {{-- Enable 2FA --}}
             <form method="POST" action="{{ url('user/two-factor-authentication') }}">

@@ -4,6 +4,12 @@
     </div>
 
     <div class="card-body px-5">
+        @if (session('status') == 'profile-information-updated')
+            <div class="alert alert-success mb-5">
+                {{ __('Your profile has been updated.') }}
+            </div>
+        @endif
+
         <form method="POST" action="{{ route('user-profile-information.update') }}">
             @csrf
             @method('PUT')

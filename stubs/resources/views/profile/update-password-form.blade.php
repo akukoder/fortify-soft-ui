@@ -4,7 +4,11 @@
     </div>
 
     <div class="card-body px-5">
-
+        @if (session('status') == 'password-updated')
+            <div class="alert alert-success mb-5">
+                {{ __('Your password has been updated.') }}
+            </div>
+        @endif
         <form method="POST" action="{{ route('user-password.update') }}">
             @csrf
             @method('PUT')
