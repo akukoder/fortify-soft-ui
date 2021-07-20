@@ -20,6 +20,7 @@ class InstallCommand extends Command
         $this->updateProvider();
         $this->updateConfig();
         $this->updateRoutes();
+        $this->updateUserModel();
 
         $this->comment('FortifySoftUi installation completed!');
 
@@ -50,5 +51,39 @@ class InstallCommand extends Command
     {
         File::delete(base_path('routes/web.php'));
         File::copy(__DIR__.'/../../stubs/routes/web.stub', base_path('routes/web.php'));
+    }
+
+    protected function updateUserModel()
+    {
+        $this->replaceInFile(
+            "class User extends Authenticatable",
+            "class User extends Authenticatable implements MustVerifyEmail",
+            app_path('Models/User.php')
+        );
+
+        $this->replaceInFile(
+            "use HasFactory, Notifiable;",
+            "use HasFactory, Notifiable, TwoFactorAuthenticatable;",
+            app_path('Models/User.php')
+        );
+
+        $this->replaceInFile(
+            "use Illuminate\Notifications\Notifiable;",
+            "use Illuminate\Notifications\Notifiable;\nuse Laravel\Fortify\TwoFactorAuthenticatable;",
+            app_path('Models/User.php')
+        );
+    }
+
+    /**
+     * Replace a given string within a given file.
+     *
+     * @param  string  $search
+     * @param  string  $replace
+     * @param  string  $path
+     * @return void
+     */
+    protected function replaceInFile($search, $replace, $path)
+    {
+        file_put_contents($path, str_replace($search, $replace, file_get_contents($path)));
     }
 }
