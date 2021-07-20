@@ -14,6 +14,7 @@ class InstallCommand extends Command
     public function handle()
     {
         $this->callSilent('fortify:ui', ['--skip-provider' => true]);
+
         $this->info('FortifyUI has been installed. Proceeding to install FortifySoftUi.');
 
         $this->publishAssets();
@@ -22,9 +23,10 @@ class InstallCommand extends Command
         $this->updateRoutes();
         $this->updateUserModel();
 
-        $this->comment('FortifySoftUi installation completed!');
+        $this->callSilent('migrate');
 
-        $this->info('Remember to run npm i && npm run dev!');
+        $this->line('');
+        $this->comment('FortifySoftUi installation completed!');
     }
 
     protected function publishAssets()
@@ -56,20 +58,20 @@ class InstallCommand extends Command
     protected function updateUserModel()
     {
         $this->replaceInFile(
-            "class User extends Authenticatable",
-            "class User extends Authenticatable implements MustVerifyEmail",
+            "class User extends Authenticatable".PHP_EOL,
+            "class User extends Authenticatable implements MustVerifyEmail".PHP_EOL,
             app_path('Models/User.php')
         );
 
         $this->replaceInFile(
-            "use HasFactory, Notifiable;",
-            "use HasFactory, Notifiable, TwoFactorAuthenticatable;",
+            "use HasFactory, Notifiable;".PHP_EOL,
+            "use HasFactory, Notifiable, TwoFactorAuthenticatable;".PHP_EOL,
             app_path('Models/User.php')
         );
 
         $this->replaceInFile(
-            "use Illuminate\Notifications\Notifiable;",
-            "use Illuminate\Notifications\Notifiable;\nuse Laravel\Fortify\TwoFactorAuthenticatable;",
+            "use Illuminate\Notifications\Notifiable;".PHP_EOL,
+            "use Illuminate\Notifications\Notifiable;\nuse Laravel\Fortify\TwoFactorAuthenticatable;".PHP_EOL,
             app_path('Models/User.php')
         );
     }
