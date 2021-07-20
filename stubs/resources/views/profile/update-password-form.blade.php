@@ -26,7 +26,7 @@
             </div>
 
             <div class="form-group row">
-                <label class="col-form-label col-md-3">{{ __('Password') }}</label>
+                <label class="col-form-label col-md-3">{{ __('New Password') }}</label>
                 <div class="col-md-4">
                     <input
                         type="password"
