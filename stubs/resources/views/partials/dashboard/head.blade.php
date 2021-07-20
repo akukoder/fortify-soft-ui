@@ -20,7 +20,4 @@
 <!-- CSS Files -->
 <link id="pagestyle" href="{{ asset('vendor/soft-ui/css/soft-ui-dashboard.css') }}?v=1.0.3" rel="stylesheet" />
 
-<!-- Styles -->
-<link href="{{ asset('css/app.css') }}?v=1.0.0" rel="stylesheet">
-
 @stack('css')

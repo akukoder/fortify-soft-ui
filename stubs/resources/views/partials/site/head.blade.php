@@ -18,9 +18,6 @@
 <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
 
 <!-- CSS Files -->
-<link id="pagestyle" href="{{ asset('vendor/soft-ui/css/soft-design-system.css') }}?v=1.0.3" rel="stylesheet" />
-
-<!-- Styles -->
-<link href="{{ asset('css/app.css') }}?v=1.0.0" rel="stylesheet">
+<link id="pagestyle" href="{{ asset('vendor/soft-ui/css/soft-design-system.css') }}?v=1.0.5" rel="stylesheet" />
 
 @stack('css')
