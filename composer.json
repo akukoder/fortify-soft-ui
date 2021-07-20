@@ -1,9 +1,10 @@
 {
   "name": "akukoder/fortify-soft-ui",
-  "description": "Fortify-driven Laravel UI replacement using Soft UI Dashboard by Creative Tim.",
+  "description": "Laravel Fortify based on FortifyUI and built using the Soft UI Dashboard and Soft UI Design System the by Creative Tim.",
   "keywords": [
     "laravel",
     "fortify",
+    "fortify-ui",
     "fortify-soft-ui"
   ],
   "homepage": "https://github.com/akukoder/fortify-soft-ui",
