@@ -2,6 +2,11 @@
 
 # Introduction
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/akukoder/fortify-soft-ui.svg?style=flat-square)](https://packagist.org/packages/akukoder/fortify-soft-ui)
+[![Last Commit](https://img.shields.io/github/last-commit/akukoder/fortify-soft-ui?style=flat-square)](https://packagist.org/packages/akukoder/fortify-soft-ui)
+[![Total Downloads](https://img.shields.io/packagist/dt/akukoder/fortify-soft-ui.svg?style=flat-square)](https://packagist.org/packages/akukoder/fortify-soft-ui)
+[![License](https://img.shields.io/packagist/l/akukoder/fortify-soft-ui?style=flat-square)](https://packagist.org/packages/akukoder/fortify-soft-ui)
+
 **FortifySoftUi** is a Laravel Fortify UI preset, built with [Soft UI Dashboard](https://www.creative-tim.com/product/soft-ui-dashboard) and [Soft UI Design System](https://www.creative-tim.com/product/soft-ui-design-system) by [Creative Tim](https://www.creative-tim.com).
 
 ## Requirement
