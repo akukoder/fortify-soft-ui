@@ -20,4 +20,14 @@
 <!-- CSS Files -->
 <link id="pagestyle" href="{{ asset('vendor/soft-ui/css/soft-ui-dashboard.css') }}?v=1.0.3" rel="stylesheet" />
 
+{{--
+TODO:
+-  should be put in custom CSS file
+--}}
+<style>
+    .navbar-vertical .navbar-nav > .nav-item .nav-link.active .icon svg,
+    .navbar-vertical .navbar-nav > .nav-item .nav-link.active .icon i {
+        color: #fff;
+    }
+</style>
 @stack('css')
