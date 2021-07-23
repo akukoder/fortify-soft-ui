@@ -52,29 +52,29 @@
                 </div>
             </div><!-- /.row -->
 
-                <div class="row">
-                    <div class="col-md-6">
-                        {{-- Regenerate 2FA Recovery Codes --}}
-                        <form method="POST" action="{{ url('user/two-factor-recovery-codes') }}">
-                            @csrf
+            <div class="row">
+                <div class="col-md-6">
+                    {{-- Regenerate 2FA Recovery Codes --}}
+                    <form method="POST" action="{{ url('user/two-factor-recovery-codes') }}">
+                        @csrf
 
-                            <button type="submit" class="btn btn-primary">
-                                {{ __('Regenerate Recovery Codes') }}
-                            </button>
-                        </form>
-                    </div>
-                    <div class="col-md-6 text-md-end">
-                        {{-- Disable 2FA --}}
-                        <form method="POST" action="{{ url('user/two-factor-authentication') }}">
-                            @csrf
-                            @method('DELETE')
-
-                            <button type="submit" class="btn btn-danger">
-                                {{ __('Disable Two-Factor Authentication') }}
-                            </button>
-                        </form>
-                    </div>
+                        <button type="submit" class="btn btn-primary">
+                            {{ __('Regenerate Recovery Codes') }}
+                        </button>
+                    </form>
                 </div>
+                <div class="col-md-6 text-md-end">
+                    {{-- Disable 2FA --}}
+                    <form method="POST" action="{{ url('user/two-factor-authentication') }}">
+                        @csrf
+                        @method('DELETE')
+
+                        <button type="submit" class="btn btn-danger">
+                            {{ __('Disable Two-Factor Authentication') }}
+                        </button>
+                    </form>
+                </div>
+            </div>
 
         @endif
     </div>

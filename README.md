@@ -9,6 +9,19 @@
 
 **FortifySoftUi** is a Laravel Fortify UI preset, built with [Soft UI Dashboard](https://www.creative-tim.com/product/soft-ui-dashboard) and [Soft UI Design System](https://www.creative-tim.com/product/soft-ui-design-system) by [Creative Tim](https://www.creative-tim.com).
 
+## Features
+
+All Fortify features enabled by default, and some other basic features to get you started.
+
+1. Registration
+2. Reset password
+3. Email verification
+4. Profile Information
+5. Update password
+6. Two-factor authentication
+7. Browser session
+8. User management
+
 ## Requirement
 
 Install the package on the new Laravel installation only, without additional packages like Jetstream or Laravel Ui.
