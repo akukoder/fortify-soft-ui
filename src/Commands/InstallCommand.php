@@ -28,7 +28,7 @@ class InstallCommand extends Command
         $this->updateSessionDriver();
 
         $this->callSilent('migrate');
-        $this->callSilent('optimize');
+        $this->callSilent('optimize:clear');
 
         $this->line('');
         $this->comment('FortifySoftUi installation completed!');
